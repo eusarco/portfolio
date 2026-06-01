@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./index.js" defer></script>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edmund Udo Sarco — BSIT Student & Aspiring IT Professional at Davao del Norte State College"/>
+    <meta name="keywords" content="Edmund Sarco, BSIT, Portfolio, IT, Davao del Norte State College, Developer"/>
+    <title>Edmund Sarco | IT Portfolio</title>
+    <link rel="icon" href="./favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon-180x180.png">
+</head>
+<body>
+<main>
+
+    <header id="heroHeader" class="hero-header">
+
+        <!-- NAV -->
+        <nav id="navBar" class="nav">
+            <div class="container nav__inner">
+
+                <!-- BRAND: logo + theme toggle grouped on the left -->
+                <div class="nav__brand">
+                    <a href="#heroHeader" class="nav__logo">EUS</a>
+                    <button type="button" id="themeToggleBtn" class="nav__theme-btn" aria-label="Toggle theme">
+                        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    </button>
+                </div>
+
+                <!-- CONTROLS: hamburger only (visible on mobile) -->
+                <div class="nav__controls">
+                    <button type="button" id="hamburgerBtn" class="nav__hamburger-btn" aria-label="Toggle navigation">
+                        <span class="nav__hamburger-top"></span>
+                        <span class="nav__hamburger-center"></span>
+                        <span class="nav__hamburger-bottom"></span>
+                    </button>
+                </div>
+
+                <!-- NAV LINKS -->
+                <ul id="navList" class="nav__list">
+                    <li class="nav__list-item"><a class="nav__list-link active" href="#heroHeader">Home</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#about">About</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#services">Skills</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#works">Projects</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#certifications">Certs</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link nav__list-link--cta" href="#contact">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- HERO CONTENT -->
+        <section class="header__container container">
+            <div class="header__left">
+                <div class="header__eyebrow">
+                    <span class="header__eyebrow-line"></span>
+                    <span class="header__eyebrow-text">BSIT Student</span>
+                </div>
+                <h1 class="header__title">
+                    <span class="header__title-name">
+                        <span class="header__title-1" data-role="EDMUND">Edmund</span>
+                        <span class="header__title-1" data-role="UDO">Udo</span>
+                    </span>
+                    <span class="header__title-2" data-role="SARCO">Sarco</span>
+                </h1>
+                <p class="header__msg">A dedicated Information Technology student at <strong>Davao del Norte State College</strong>, building real-world skills in software development, database systems, networking, and technical support. Passionate about crafting efficient, user-centered solutions.</p>
+                <div class="header__actions">
+                    <a href="#works" class="header__btn header__btn--primary">View My Work</a>
+                    <a href="#contact" class="header__btn header__btn--ghost">Get In Touch</a>
+                </div>
+                <div class="header__stats">
+                    <div class="header__stat">
+                        <span class="header__stat-num">5+</span>
+                        <span class="header__stat-label">Projects</span>
+                    </div>
+                    <div class="header__stat-divider"></div>
+                    <div class="header__stat">
+                        <span class="header__stat-num">2</span>
+                        <span class="header__stat-label">Certifications</span>
+                    </div>
+                    <div class="header__stat-divider"></div>
+                    <div class="header__stat">
+                        <span class="header__stat-num">3+</span>
+                        <span class="header__stat-label">Tech Stacks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header__right">
+                <img src="./assets/illustrations/n_bg.png" alt="Edmund Sarco illustration"/>
+            </div>
+        </section>
+
+        <div class="hero__scroll-cue">
+            <span class="hero__scroll-line"></span>
+            <span class="hero__scroll-label">scroll</span>
+        </div>
+        <span class="header__bg"></span>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+        <div class="about">
+            <div class="about__left">
+                <div class="section__label">// about me</div>
+                <h2 class="section__title section__title--left">Who I Am</h2>
+                <p class="about__bio">I'm <strong>Edmund Udo Sarco</strong>, a BSIT student at <strong>Davao del Norte State College</strong> with a genuine enthusiasm for technology and problem-solving. My academic journey has given me hands-on experience across multiple disciplines — from building desktop applications and managing relational databases, to networking fundamentals and front-end web development.</p>
+                <p class="about__bio">Beyond coursework, I pursue certifications that sharpen my professional edge. I believe in writing clean, maintainable code and designing systems that are as reliable as they are intuitive.</p>
+                <div class="about__details">
+                    <div class="about__detail-item">
+                        <span class="about__detail-key">School</span>
+                        <span class="about__detail-val">Davao del Norte State College</span>
+                    </div>
+                    <div class="about__detail-item">
+                        <span class="about__detail-key">Degree</span>
+                        <span class="about__detail-val">Bachelor of Science in Information Technology</span>
+                    </div>
+                    <div class="about__detail-item">
+                        <span class="about__detail-key">Location</span>
+                        <span class="about__detail-val">Tagum City, Davao del Norte, Philippines</span>
+                    </div>
+                    <div class="about__detail-item">
+                        <span class="about__detail-key">Status</span>
+                        <span class="about__detail-val about__detail-val--available">&#9679; Available for Opportunities</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about__right">
+                <div class="about__tech-stack">
+                    <div class="about__tech-label">Tech Stack</div>
+                    <div class="about__tech-grid">
+                        <span class="about__tech-item">Java</span>
+                        <span class="about__tech-item">HTML</span>
+                        <span class="about__tech-item">CSS</span>
+                        <span class="about__tech-item">JavaScript</span>
+                        <span class="about__tech-item">MySQL</span>
+                        <span class="about__tech-item">XAMPP</span>
+                        <span class="about__tech-item">NetBeans</span>
+                        <span class="about__tech-item">Git</span>
+                        <span class="about__tech-item">Networking</span>
+                        <span class="about__tech-item">CCNA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS / SERVICES -->
+    <section id="services" class="section container">
+        <div class="section__label">// what i do</div>
+        <h2 class="section__title">Core Skills</h2>
+        <div class="service-cards">
+            <article class="service-card__box">
+                <div class="service-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3 class="service-card__title">Software Development</h3>
+                <p class="service-card__msg">Proficient in Java for building desktop applications — from quiz platforms to GUI-driven inventory systems. Strong grasp of OOP principles, data structures, and clean architecture.</p>
+                <ul class="service-card__list">
+                    <li>Java (OOP, Swing GUI)</li>
+                    <li>Application Design Patterns</li>
+                    <li>Problem Solving &amp; Algorithms</li>
+                </ul>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <div class="service-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                </div>
+                <h3 class="service-card__title">Database Management</h3>
+                <p class="service-card__msg">Experienced in designing relational databases, writing efficient SQL queries, and integrating MySQL with Java applications via XAMPP. Focused on data integrity and optimized schema design.</p>
+                <ul class="service-card__list">
+                    <li>MySQL &amp; XAMPP</li>
+                    <li>Schema Design &amp; Normalization</li>
+                    <li>Java–DB Integration (JDBC)</li>
+                </ul>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <div class="service-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+                </div>
+                <h3 class="service-card__title">Web Development</h3>
+                <p class="service-card__msg">Builds responsive, visually polished websites using HTML, CSS, and JavaScript. Comfortable crafting layouts, animations, and interactive experiences that work across devices.</p>
+                <ul class="service-card__list">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>Responsive &amp; Mobile-First Design</li>
+                    <li>UI/UX Fundamentals</li>
+                </ul>
+                <span class="service-card__bg"></span>
+            </article>
+            <article class="service-card__box">
+                <div class="service-card__icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h7"/><circle cx="17" cy="18" r="3"/><path d="m19.5 20.5 1.5 1.5"/></svg>
+                </div>
+                <h3 class="service-card__title">Networking &amp; Technical Support</h3>
+                <p class="service-card__msg">CCNA-certified in networking fundamentals, including TCP/IP, routing, and switching concepts. Skilled in diagnosing hardware and software issues and delivering reliable technical assistance.</p>
+                <ul class="service-card__list">
+                    <li>CCNA: Intro to Networks (Cisco)</li>
+                    <li>TCP/IP, Routing &amp; Switching</li>
+                    <li>Hardware Troubleshooting</li>
+                </ul>
+                <span class="service-card__bg"></span>
+            </article>
+        </div>
+    </section>
+
+    <!-- PROJECTS / WORKS -->
+    <section id="works" class="section container">
+        <div class="section__label">// my projects</div>
+        <h2 class="section__title">Featured Work</h2>
+        <div class="works">
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                        <img src="./assets/works/QUIZIFY.png" alt="Quizify — Java Quiz Application"/>
+                        <span class="work__img-overlay"><span class="work__img-overlay-text">View Project</span></span>
+                    </span>
+                    <div class="work__content">
+                        <span class="work__num">01</span>
+                        <h3 class="work__title">Quiz Application</h3>
+                        <p class="work__desc">A feature-rich desktop quiz application inspired by Quizlet, built entirely in Java. Supports multiple question types, real-time scoring, and a clean, intuitive interface designed for ease of use.</p>
+                        <span class="work__badges">
+                            <span class="work__badge">Java</span>
+                            <span class="work__badge">Swing GUI</span>
+                            <span class="work__badge">OOP</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                        <img src="./assets/works/GUI.png" alt="Point-of-Sale GUI Application"/>
+                        <span class="work__img-overlay"><span class="work__img-overlay-text">View Project</span></span>
+                    </span>
+                    <div class="work__content">
+                        <span class="work__num">02</span>
+                        <h3 class="work__title">POS &amp; Receipt System</h3>
+                        <p class="work__desc">A Java-based GUI application that tracks purchases in real time and automatically generates itemized receipts. Designed with a clean layout for efficient cashier workflows.</p>
+                        <span class="work__badges">
+                            <span class="work__badge">Java</span>
+                            <span class="work__badge">Swing GUI</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                        <img src="./assets/works/Perfume.png" alt="Perfume Customization Database"/>
+                        <span class="work__img-overlay"><span class="work__img-overlay-text">View Project</span></span>
+                    </span>
+                    <div class="work__content">
+                        <span class="work__num">03</span>
+                        <h3 class="work__title">Perfume Customization DB</h3>
+                        <p class="work__desc">A full-stack database application that allows customers to personalize their own unique perfume blends. Built with Java front-end and a MySQL backend hosted on XAMPP.</p>
+                        <span class="work__badges">
+                            <span class="work__badge">Java</span>
+                            <span class="work__badge">MySQL</span>
+                            <span class="work__badge">XAMPP</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                        <img src="./assets/works/website 2.png" alt="Coffee Shop Website"/>
+                        <span class="work__img-overlay"><span class="work__img-overlay-text">View Project</span></span>
+                    </span>
+                    <div class="work__content">
+                        <span class="work__num">04</span>
+                        <h3 class="work__title">Coffee Shop Website</h3>
+                        <p class="work__desc">A modern, responsive website concept for a coffee shop brand. Features a rich visual layout, smooth scrolling, and animated sections — built to attract and retain customers online.</p>
+                        <span class="work__badges">
+                            <span class="work__badge">HTML</span>
+                            <span class="work__badge">CSS</span>
+                            <span class="work__badge">JavaScript</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class="work">
+                <div class="work__box">
+                    <span class="work__img-box">
+                        <img src="./assets/works/website.png" alt="Inazuma Genshin Impact Fan Website"/>
+                        <span class="work__img-overlay"><span class="work__img-overlay-text">View Project</span></span>
+                    </span>
+                    <div class="work__content">
+                        <span class="work__num">05</span>
+                        <h3 class="work__title">Inazuma Fan Website</h3>
+                        <p class="work__desc">An immersive fan website dedicated to Inazuma, the Japanese-inspired region from Genshin Impact. Features atmospheric visuals, lore sections, and interactive elements with thematic design.</p>
+                        <span class="work__badges">
+                            <span class="work__badge">HTML</span>
+                            <span class="work__badge">CSS</span>
+                            <span class="work__badge">JavaScript</span>
+                        </span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section container">
+        <div class="section__label">// credentials</div>
+        <h2 class="section__title">Certifications</h2>
+        <div class="cert-cards">
+            <article class="cert-card">
+                <div class="cert-card__inner">
+                    <div class="cert-card__top">
+                        <div class="cert-card__icon cert-card__icon--cisco">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                        </div>
+                        <div class="cert-card__meta">
+                            <span class="cert-card__issuer cert-card__issuer--cisco">Cisco Networking Academy</span>
+                            <span class="cert-card__date">Completed May 29, 2025</span>
+                        </div>
+                    </div>
+                    <h3 class="cert-card__title">CCNA: Introduction to Networks</h3>
+                    <p class="cert-card__desc">Awarded by Davao Del Norte State College through the Cisco Networking Academy program. Covers essential networking concepts including network protocols, IP addressing, routing, switching, and basic network configuration.</p>
+                    <div class="cert-card__tags">
+                        <span class="cert-card__tag">TCP/IP</span>
+                        <span class="cert-card__tag">Routing &amp; Switching</span>
+                        <span class="cert-card__tag">Network Protocols</span>
+                        <span class="cert-card__tag">Cisco IOS</span>
+                    </div>
+                    <div class="cert-card__footer">
+                        <span class="cert-card__badge cert-card__badge--cisco">&#10003;&nbsp; Verified Certificate</span>
+                        <span class="cert-card__instructor">Instructor: Ian Jay Padios</span>
+                    </div>
+                </div>
+                <span class="cert-card__glow cert-card__glow--cisco"></span>
+            </article>
+            <article class="cert-card">
+                <div class="cert-card__inner">
+                    <div class="cert-card__top">
+                        <div class="cert-card__icon cert-card__icon--wadhwani">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                        </div>
+                        <div class="cert-card__meta">
+                            <span class="cert-card__issuer cert-card__issuer--wadhwani">Wadhwani Foundation</span>
+                            <span class="cert-card__date">Completed April 30, 2026</span>
+                        </div>
+                    </div>
+                    <h3 class="cert-card__title">Ignite Philippines</h3>
+                    <p class="cert-card__desc">Certificate of Content Completion awarded for fulfilling all coursework and assessments in the Ignite Philippines program. Gained key entrepreneurial skills in ideation, business modeling, and financial planning across 42 hours of training.</p>
+                    <div class="cert-card__tags">
+                        <span class="cert-card__tag">Entrepreneurship</span>
+                        <span class="cert-card__tag">Business Modeling</span>
+                        <span class="cert-card__tag">Financial Planning</span>
+                        <span class="cert-card__tag">42 Hours</span>
+                    </div>
+                    <div class="cert-card__footer">
+                        <span class="cert-card__badge cert-card__badge--wadhwani">&#10003;&nbsp; Verified Certificate</span>
+                        <span class="cert-card__instructor">Issued by: Meetul Patel, President</span>
+                    </div>
+                </div>
+                <span class="cert-card__glow cert-card__glow--wadhwani"></span>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+        <div class="section__label">// get in touch</div>
+        <h2 class="section__title">Let's Connect</h2>
+        <p class="contact__intro">Have a project, opportunity, or just want to say hello? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.</p>
+        <div class="contact">
+            <form class="contact__form">
+                <div class="contact__row">
+                    <div class="contact__field-wrapper">
+                        <label for="contactNameTxt">Full Name</label>
+                        <input id="contactNameTxt" type="text" placeholder="Your Name"/>
+                    </div>
+                    <div class="contact__field-wrapper">
+                        <label for="contactEmailTxt">Email Address</label>
+                        <input id="contactEmailTxt" type="email" placeholder="your@email.com"/>
+                    </div>
+                </div>
+                <div class="contact__field-wrapper">
+                    <label for="contactSubjectTxt">Subject</label>
+                    <input id="contactSubjectTxt" type="text" placeholder="What's this about?"/>
+                </div>
+                <div class="contact__field-wrapper">
+                    <label for="contactDescriptionTxt">Message</label>
+                    <textarea id="contactDescriptionTxt" placeholder="Tell me more about your project or inquiry..."></textarea>
+                </div>
+                <button type="submit" class="contact__submit-btn">
+                    <span>Send Message</span>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+            </form>
+            <div class="contact__aside">
+                <div class="contact__info-block">
+                    <div class="contact__info-title">Direct Channels</div>
+                    <a href="https://www.facebook.com/edmund.udosarco" target="_blank" class="contact__info-link">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        Facebook Profile
+                    </a>
+                </div>
+                <div class="contact__info-block">
+                    <div class="contact__info-title">Location</div>
+                    <p class="contact__info-text">Tagum City, Davao del Norte, Philippines</p>
+                </div>
+                <div class="contact__info-block">
+                    <div class="contact__info-title">Response Time</div>
+                    <p class="contact__info-text">Usually within 24–48 hours</p>
+                </div>
+                <span class="contact__illustration">
+                    <img src="./assets/illustrations/connect.svg" alt="Let's connect illustration"/>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <span class="footer__logo">EUS</span>
+                <span class="footer__tagline">Building tomorrow's tech, today.</span>
+            </div>
+            <p class="footer__copy">&copy; 2026 Edmund Udo Sarco &mdash; All rights reserved.</p>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
